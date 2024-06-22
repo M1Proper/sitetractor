@@ -3,61 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Оно тебе надо</title>
+    <title>СпецСервисКар</title>
+    <link rel="icon" href="./assets/icons/favicon.ico">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <!-- Header section -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">О компании</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#doctors">Врачи</a></li>
-                <li><a href="#contact">Контакты</a></li>
+    <header class="header">
+        <nav class="header-nav">
+            <figure class="header-image">
+                <img class="header-image__logo" src="./assets/images/Logo.png"/>
+            </figure>
+            <ul class="header-list">
+                <li class="header-list__item"><a href="#product">Товары</a></li>
+                <li class="header-list__item"><a href="#footer">Контакты</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- About section -->
-    <section id="about">
-        <h2>О компании</h2>
-        <p>Описание компании</p>
-    </section>
+    <main class="main">
+        <div class="product" id="product">
+            <div class="product-wrapper wrapper_1">
+                <figure class="product-image">
+                    <img class="product-image__img" src="./assets/images/product1.jpg"/>
+                </figure>
+                <article class="product-wrapper__text">
+                    <h1 class="product-text__title">Электроштабелер SOBELL CL1646СВ</h1>
+                    <p class="product-text__description">грузоподъемность 1,6т. - высота подъема 4,6м. - промышленный АКБ кислотный 240AH. - c подставкой для оператора и поручнями</p>
+                    <ul class="product-list">
+                        <li class="product-list__item"> <h3 class="product-list__item-title">Грузоподъемность: </h3> <p class="product-list__item-text">- 1,6т</p></li>
+                        <li class="product-list__item"> <h3 class="product-list__item-title">высота подъема: </h3> <p class="product-list__item-text">- 4,6м</p></li>
+                        <li class="product-list__item"> <h3 class="product-list__item-title">АКБ: </h3> <p class="product-list__item-text">- промышленный АКБ кислотный 240AH</p></li>
+                        <li class="product-list__item"><p class="product-list__item-text">- c подставкой для оператора и поручнями</p></li>
+                    </ul>
+                    <p class="product-text__price">Цена от 1 000 000р</p>
+                </article>
+            </div>
+            <div class="product-wrapper wrapper_2">
+                <figure class="product-image">
+                    <img class="product-image__img" src="./assets/images/product2.jpg"/>
+                </figure>
+                <article class="product-wrapper__text">
+                    <h1 class="product-text__title">Электроштабелер Bobcat</h1>
+                    <ul class="product-list">
+                        <li class="product-list__item"> <h3 class="product-list__item-title"> Номинальная грузоподъёмность: </h3> <p class="product-list__item-text">- при ЦТ 600 мм 1200 кг</p></li>
+                        <li class="product-list__item"> <h3 class="product-list__item-title">Положение оператора: </h3> <p class="product-list__item-text">- Пешеход</p></li>
+                        <li class="product-list__item"> <h3 class="product-list__item-title">Тип мачты: </h3> <p class="product-list__item-text">- VM300</p></li>
+                        <li class="product-list__item"> <h3 class="product-list__item-title">Максимальная рабочая высота подъема вил: </h3> <p class="product-list__item-text">- 3085 мм</p></li>
+                        <ul class="product-list-content" id="content1" style="display: none">
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Остаточная грузоподъемность на высоте 2 585 мм: </h3> <p class="product-list__item-text">- 3 085 мм: 1200 кг <br/> 3 685 мм: 900 кг</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">2х-секционная мачта без свободного хода </h3></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Высота сложенная: </h3> <p class="product-list__item-text">- 2074 мм</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Габариты: </h3> <p class="product-list__item-text">- 1698 х 800мм (Д x Ш)</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Вес: </h3> <p class="product-list__item-text">- 560 кг</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Ширина рабочего прохода с поддоном 1200 х 800 вдоль вил, вкл. зазор безопасности 200мм (AST): </h3> <p class="product-list__item-text">- 2160 мм</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Вилы: </h3> <p class="product-list__item-text">- 1150 х 560 мм (Д x Ш)</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Скорость движения: </h3> <p class="product-list__item-text">- 4,2 / 4,5 км/ч</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Двигатель хода S2 60 min: </h3> <p class="product-list__item-text">- 0,65 кВт</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Двигатель подъёма: </h3> <p class="product-list__item-text">- 2,2 кВт</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Максимально преодолеваемый подъём % с грузом / без груза: </h3> <p class="product-list__item-text">- 6 / 10</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Тяговая АКБ гелевая необслуживаемая: </h3> <p class="product-list__item-text">- 24 В / 85 Ач</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Зарядное устройство (10-12 часов): </h3> <p class="product-list__item-text">- Встроенное</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Производство: </h3> <p class="product-list__item-text">- Китай, новый</p></li>
+                        </ul>
+                    </ul>
+                    <p class="product-text__price">Цена от 250 000т.р.</p>
+                    <button class="product-button" data-target="content1">Показать больше</button>
+                </article>
+            </div>
+            <div class="product-wrapper wrapper_3">
+                <figure class="product-image">
+                    <img class="product-image__img" src="./assets/images/product3.jpg"/>
+                </figure>
+                <article class="product-wrapper__text">
+                    <h1 class="product-text__title">ECL15N(3600)</h1>
+                    <ul class="product-list">
+                        <li class="product-list__item"> <h3 class="product-list__item-title">Тип: </h3> <p class="product-list__item-text">- Самоходный</p></li>
+                        <li class="product-list__item"> <h3 class="product-list__item-title">Положение оператора: </h3> <p class="product-list__item-text">- Пеший</p></li>
+                        <li class="product-list__item"> <h3 class="product-list__item-title">Грузоподъемность Q(кг): </h3> <p class="product-list__item-text">- 1500 </p></li>
+                        <li class="product-list__item"> <h3 class="product-list__item-title">Центрзагрузки c(мм): </h3> <p class="product-list__item-text">- 600</p></li>
+                        <ul class="product-list-content" id="content2" style="display: none">
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Расстояние отцентраосидовил x(мм): </h3> <p class="product-list__item-text">- 770</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Колеснаябаза y(мм): </h3> <p class="product-list__item-text">- 1283</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Типколес: </h3> <p class="product-list__item-text">- Полиуретан(PU)</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Размерзаднихколес: </h3> <p class="product-list__item-text">- Ø80х70</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Размерпереднихколес(ведущих): </h3> <p class="product-list__item-text">- Ø220х70</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Дополнительныеколеса: </h3> <p class="product-list__item-text">- Ø100х50</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Кол-воколесспереди/сзади (х-ведущие): </h3> <p class="product-list__item-text">- 1х+1/4</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Масса: </h3> <p class="product-list__item-text">- 782кг</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Нагрузканапереднюю/заднююось (без груза): </h3> <p class="product-list__item-text">- 544/238(кг)</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Нагрузканапереднюю/заднююосьс (с грузом): </h3> <p class="product-list__item-text">- 722/1560(кг)</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Габаритнаявысота(min) h1(мм): </h3> <p class="product-list__item-text">- 2080</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Высотаподъема h2(мм): </h3> <p class="product-list__item-text">- 2900</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Свободныйподъем h3(мм): </h3> <p class="product-list__item-text">- 78</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Общаядлина l1(мм): </h3> <p class="product-list__item-text">- 1830</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Длинадофронтавил l2(мм): </h3> <p class="product-list__item-text">- 681</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Высотагрузовыхвилвнижнем h13(мм): </h3> <p class="product-list__item-text">- 85</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Общаяширина b1/b2(мм): </h3> <p class="product-list__item-text">- 685</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Размеры вил s/e/l(мм): </h3> <p class="product-list__item-text">- 60/180/1150</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Ширинавил(мин/макс) b5(мм): </h3> <p class="product-list__item-text">- 570/685</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Клиренс в центре базы m1(мм): </h3> <p class="product-list__item-text">- 25</p></li>
+                            <li class="product-list__item"> <h3 class="product-list__item-title">Ширина прохода с паллетой Ast(мм): </h3> <p class="product-list__item-text">- 2261</p></li>
+                        </ul>
+                    </ul>
+                    <p class="product-text__price">Цена от 763 000 р.</p>
+                    <button class="product-button" data-target="content2">Показать больше</button>
+                </article>
+            </div>
+            <div class="product-wrapper wrapper_4">
+                <div class="product-image">
+                    <img class="product-image__img" src="./assets/images/product4_1.jpg"/>
+                    <img class="product-image__img2" src="./assets/images/product4_2.jpg"/>
+                </div>
+                <article class="product-wrapper__text">
+                    <h1 class="product-text__title">Самоходный штабелер AX-1230</h1>
+                    <p class="product-text__description">Самоходный электрический штабелер AX-1230 поднимает до 1200 кг и подаёт грузы на высоту до 3 м. Рекомендуется для укладки палетированных грузов в 2-3 яруса, погрузки и разгрузки транспорта</p>
+                    <p class="product-text__price">Цена от 200 000р</p>
+                </article>
+            </div>
+            <div class="product-wrapper wrapper_5">
+                <figure class="product-image">
+                    <img class="product-image__img" src="./assets/images/product5_1.jpg"/>
+                    <figure class="product-image2">
+                        <img class="product-image__img2" src="./assets/images/product5_2.jpg"/>
+                        <img class="product-image__img2" src="./assets/images/product5_3.jpg"/>
+                    </figure>
+                </figure>
+                <article class="product-wrapper__text">
+                    <h1 class="product-text__title">Гидравлический Штабелер HS 1016 OXLIFT</h1>
+                    <p class="product-text__description">Гидравлический Штабелер HS 1016 OXLIFT 1600 мм 1000 кг Ручной гидравлический штабелер HS 1016 предназначен для перемещения и подъема грузов до 1000кг на высоту до 1.6м. Имеет функцию ручного и ножного подъема. Идеально подходит для магазина или небольшого склада (павильона). Усиленная мачта и статические вилы добавляют жесткость конструкции</p>
+                    <p class="product-text__price">Цена от 65 000 р</p>
+                </article>
+            </div>
+            <div class="product-wrapper wrapper_6">
+                <figure class="product-image">
+                    <img class="product-image__img" src="./assets/images/product6_1.jpg"/>
+                    <figure class="product-image2">
+                        <img class="product-image__img2" src="./assets/images/product6_2.jpg"/>
+                        <img class="product-image__img2" src="./assets/images/product6_3.jpg"/>
+                    </figure>
+                </figure>
+                <article class="product-wrapper__text">
+                    <h1 class="product-text__title">Бочкокантователь Узкий HS-DT1435 OXLIFT</h1>
+                    <p class="product-text__description">Бочкокантователь Узкий HS-DT1435 OXLIFT 1400 мм 350 кг Ручной гидравлический штабелер (бочкокантователь) OXLIFT HS-DT1435 предназначен для захвата, подъема и переворота грузов в металлических бочках весом до 350 кг. Осуществляет захват бочки только с пола</p>
+                    <p class="product-text__price"> Цена от 100 000р</p>
+                </article>
+            </div>
+        </div>
+    </main>
 
-    <!-- Services section -->
-    <section id="services">
-        <h2>Услуги</h2>
-        <ul>
-            <li>Имплантация</li>
-            <li>Протезы</li>
-            <li>Винирование</li>
-            <li>Брекеты</li>
-            <li>Отбеливание</li>
-        </ul>
-    </section>
-
-    <!-- Doctors section -->
-    <section id="doctors">
-        <h2>Врачи</h2>
-        <ul>
-            <li>Доктор 1</li>
-            <li>Доктор 2</li>
-            <li>Доктор 3</li>
-        </ul>
-    </section>
-
-    <!-- Contact section -->
-    <section id="contact">
-        <h2>Контакты</h2>
-        <form>
-            <input type="text" placeholder="Имя">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Сообщение"></textarea>
-            <button>Отправить</button>
-        </form>
-    </section>
-
+    <footer class="footer" id="footer">
+        <div class="footer-wrapper">
+            <div class="footer-branding">
+                <figure class="footer-branding-image">
+                    <img class="footer-branding__logo" src="./assets/images/Logo.png"/>
+                </figure>
+                <h3 class="footer-branding__text">ООО"СпецСервисКар"</h3>
+            </div>
+            <div class="footer-contact">
+                <article class="footer-contact__phone">
+                    <h1>+7 978 679 31 20</h1>
+                    <h1>+7 978 679 31 21</h1>
+                </article>
+                <h2 class="footer-contact__email">SpetsServisCar@yandex.ru</h2>
+                <h3 class="footer-contact__address">Симферопольский район, Мирное, ул.Белова 3, Корпус 1</h3>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

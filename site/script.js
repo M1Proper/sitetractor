@@ -1,8 +1,15 @@
-// Add event listeners to navigation links
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', event => {
-        event.preventDefault();
-        const targetId = link.getAttribute('href').substring(1);
-        document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
-    });
-});
+document.querySelectorAll('.product-button').forEach(function(button) {
+    button.addEventListener('click', function() {
+        const targetId = this.getAttribute('data-target')
+        const content = document.getElementById(targetId)
+
+        if (content.style.display === 'none' || content.style.display === '') {
+            content.style.display = 'flex'
+            this.textContent = 'Показать меньше '
+        } else {
+            content.style.display = 'none'
+
+            this.textContent = 'Показать больше '
+        }
+    })
+})
